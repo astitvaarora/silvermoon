@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rv_card1_background"
+        android:minHeight="113.5dp"
+        android:minWidth="162dp"
+        />
+    <TextView
+        android:id="@+id/rv_card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Focus"
+        android:fontFamily="@font/helveticaneuebold"
+        android:textColor="#3F414E"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/cardImg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/rv_card_meditationtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEDITATION"
+        android:textSize="11dp"
+        android:fontFamily="@font/helveticaneuemedium"
+        android:textColor="#A1A4B2"
+        app:layout_constraintTop_toBottomOf="@id/rv_card_title"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/rv_card_timetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3-10 MIN"
+        android:textSize="11dp"
+        android:fontFamily="@font/helveticaneuemedium"
+        android:textColor="#A1A4B2"
+        app:layout_constraintTop_toBottomOf="@id/rv_card_title"
+        app:layout_constraintStart_toEndOf="@id/rv_card_meditationtv"
+        android:layout_marginStart="10dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
