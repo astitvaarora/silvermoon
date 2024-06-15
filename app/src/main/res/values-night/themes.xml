@@ -8,7 +8,10 @@
         <item name="statusBarBackground">@color/white</item>
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowIsTranslucent">true</item>
-
+    </style>
+    <style name="Sleep.Theme.SilentMoon" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/sleepcolor</item>
     </style>
 
 </resources>

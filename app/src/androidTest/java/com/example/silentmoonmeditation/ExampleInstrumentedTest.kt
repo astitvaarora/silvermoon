@@ -1,4 +1,4 @@
-package com.example.silentmoon
+package com.example.silentmoonmeditation
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.silentmoonmeditation" />
+                  <option name="mobileSdkAppId" value="1:622447181397:android:2c34322aa9f16b1f695edc" />
+                  <option name="projectId" value="silentmoonmeditation" />
+                  <option name="projectNumber" value="622447181397" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

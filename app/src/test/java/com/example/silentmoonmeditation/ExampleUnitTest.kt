@@ -1,4 +1,4 @@
-package com.example.silentmoon
+package com.example.silentmoonmeditation
 
 import org.junit.Test
 

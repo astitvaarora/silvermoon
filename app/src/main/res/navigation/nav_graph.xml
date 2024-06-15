@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcomeScreen"
-        android:name="com.example.silentmoon.fragments.WelcomeScreen"
+        android:name="com.example.silentmoonmeditation.fragments.WelcomeScreen"
         android:label="fragment_welcome_screen"
         tools:layout="@layout/fragment_welcome_screen" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginScreen"
-        android:name="com.example.silentmoon.fragments.LoginScreen"
+        android:name="com.example.silentmoonmeditation.fragments.LoginScreen"
         android:label="fragment_login_screen"
         tools:layout="@layout/fragment_login_screen" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpScreen"
-        android:name="com.example.silentmoon.fragments.SignUpScreen"
+        android:name="com.example.silentmoonmeditation.fragments.SignUpScreen"
         android:label="fragment_sign_up_screen"
         tools:layout="@layout/fragment_sign_up_screen" >
         <action
@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/greetingScreen"
-        android:name="com.example.silentmoon.fragments.GreetingScreen"
+        android:name="com.example.silentmoonmeditation.fragments.GreetingScreen"
         android:label="fragment_greeting_screen"
         tools:layout="@layout/fragment_greeting_screen" >
         <action
@@ -49,7 +49,8 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.silentmoon.fragments.HomeFragment"
+        android:name="com.example.silentmoonmeditation.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+
 </navigation>

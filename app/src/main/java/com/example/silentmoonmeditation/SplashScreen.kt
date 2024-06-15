@@ -1,11 +1,11 @@
-package com.example.silentmoon
+package com.example.silentmoonmeditation
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.example.silentmoon.databinding.ActivityMainBinding
-import com.example.silentmoon.databinding.ActivitySplashScreenBinding
+import com.example.silentmoonmeditation.databinding.ActivitySplashScreenBinding
+
 
 class SplashScreen : AppCompatActivity() {
     private lateinit var binding : ActivitySplashScreenBinding

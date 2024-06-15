@@ -1,6 +1,5 @@
-package com.example.silentmoon.fragments
+package com.example.silentmoonmeditation.fragments
 
-import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
-import com.example.silentmoon.R
-import com.example.silentmoon.databinding.FragmentGreetingScreenBinding
+import com.example.silentmoonmeditation.R
+import com.example.silentmoonmeditation.databinding.FragmentGreetingScreenBinding
 
 class GreetingScreen : Fragment() {
     private var _binding:FragmentGreetingScreenBinding? = null
@@ -28,8 +27,14 @@ class GreetingScreen : Fragment() {
         activity?.window?.statusBarColor = ContextCompat.getColor(requireContext(), R.color.blue)
 
         binding.btnGetStarted.setOnClickListener {
-            it.findNavController().navigate(R.id.action_greetingScreen_to_homeFragment)
+            replaceFragment(HomeFragment())
         }
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        val transaction = fragmentManager?.beginTransaction()
+        transaction?.replace(R.id.fragmentCV, fragment)
+        transaction?.commit()
     }
 
     override fun onDestroyView() {

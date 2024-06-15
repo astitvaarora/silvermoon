@@ -1,11 +1,10 @@
-package com.example.silentmoon
+package com.example.silentmoonmeditation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import com.example.silentmoon.databinding.ActivityMainBinding
+import com.example.silentmoonmeditation.databinding.ActivityMainBinding
+import com.google.firebase.FirebaseApp
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -14,6 +13,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        FirebaseApp.initializeApp(this)
+
         val navHostFragment = supportFragmentManager.findFragmentById(binding.fragmentCV.id) as NavHostFragment
+
     }
 }

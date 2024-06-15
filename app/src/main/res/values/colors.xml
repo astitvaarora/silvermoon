@@ -7,4 +7,7 @@
     <color name="light_blue_600">#FF039BE5</color>
     <color name="gray_400">#FFBDBDBD</color>
     <color name="gray_600">#FF757575</color>
+    <color name="sleepcolor">#03174c</color>
+    <color name="meditate_tag_active">#8E97FD</color>
+    <color name="meditate_tag_not_active">#A0A3B1</color>
 </resources>

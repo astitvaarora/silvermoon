@@ -1,4 +1,4 @@
-package com.example.silentmoon.fragments
+package com.example.silentmoonmeditation.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import com.example.silentmoon.R
-import com.example.silentmoon.databinding.FragmentWelcomeScreenBinding
+import com.example.silentmoonmeditation.R
+import com.example.silentmoonmeditation.databinding.FragmentWelcomeScreenBinding
+import com.google.firebase.firestore.FirebaseFirestore
 
 class WelcomeScreen : Fragment() {
     private var _binding : FragmentWelcomeScreenBinding? = null

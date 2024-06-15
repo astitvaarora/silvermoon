@@ -1,7 +1,7 @@
-package com.example.silentmoon.model
+package com.example.silentmoonmeditation.model
 
 data class MainScreenCard(
-    val img:Int,
+    val img:String,
     val title:String,
     val time:String,
 )
