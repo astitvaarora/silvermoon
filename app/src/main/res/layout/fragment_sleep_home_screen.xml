@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sleephomescreenbackground"
+    tools:context=".fragments.SleepHomeScreen">
+
+    <TextView
+        android:id="@+id/tv_sleep_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep Stories"
+        android:textColor="@color/white"
+        android:fontFamily="@font/helveticaneuebold"
+        android:textSize="28dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_sleep_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helveticaneuelight"
+        android:gravity="center"
+        android:text="Soothing bedtime stories to help you fall\n into a deep and natural sleep"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sleep_heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/all_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#586894"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@drawable/all_icon"
+        app:tint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_sleep_desc"
+        app:layout_constraintEnd_toStartOf="@id/my_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/my_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#586894"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@drawable/like_icon"
+        app:tint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_sleep_desc"
+        app:layout_constraintEnd_toStartOf="@id/anxious_tag"
+        app:layout_constraintStart_toEndOf="@id/all_tag"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/anxious_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#586894"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@drawable/anxious_icon"
+        app:tint="@color/white"
+        app:layout_constraintStart_toEndOf="@id/my_tag"
+        app:layout_constraintEnd_toStartOf="@id/sleep_tag"
+        app:layout_constraintTop_toBottomOf="@id/tv_sleep_desc" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sleep_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#586894"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@drawable/sleep_icon"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/anxious_tag"
+        app:layout_constraintTop_toBottomOf="@id/tv_sleep_desc" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_sleep_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/all_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:minWidth="373dp"
+        android:layout_marginTop="30dp"
+        android:minHeight="233dp"
+        >
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Ocean Moon"
+            android:fontFamily="@font/garamondpremierprosemibold"
+            android:textColor="#FFE7BF"
+            android:textSize="36sp"
+            android:layout_marginTop="68dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+        <TextView
+            android:id="@+id/card_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non stop 8 hours of mixex from our\nmost popular sleep music"
+            android:gravity="center"
+            android:fontFamily="@font/helveticaneuelight"
+            android:textColor="#F9F9FF"
+            app:layout_constraintTop_toBottomOf="@id/card_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/card_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="START"
+            android:textColor="#3F414E"
+            android:fontFamily="@font/helveticaneuemedium"
+            android:textSize="12sp"
+            android:backgroundTint="#EBEAEC"
+            android:layout_marginBottom="20dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sleephome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/card_sleep_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
