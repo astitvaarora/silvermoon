@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "622447181397",
+    "project_id": "silentmoonmeditation",
+    "storage_bucket": "silentmoonmeditation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622447181397:android:2c34322aa9f16b1f695edc",
+        "android_client_info": {
+          "package_name": "com.example.silentmoonmeditation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622447181397-b2s56tpq0gnm0a5govuh3rnvpv9gh30u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.silentmoonmeditation",
+            "certificate_hash": "e7dd9f96743d720e1b5e257c6efd254427e87392"
+          }
+        },
+        {
+          "client_id": "622447181397-unmgna65turhuc52k609lnur55rgm1u8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQGrXTlk_VPmTYZODtqJrlETwMLKaGPDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622447181397-0i8ghoptn23hdmqvpo68tt59tm6mtni9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
